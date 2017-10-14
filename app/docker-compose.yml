@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    image: mongo
+    container_name: "mongodb"
+  web:
+    build: .
+    command: bundle exec ruby app.rb
+    volumes:
+      - .:/app
+    ports:
+      - "80:4567"
+    depends_on:
+      - db

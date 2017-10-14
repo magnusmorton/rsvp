@@ -1,0 +1,15 @@
+#main {
+    margin:auto;
+    width: 60%;
+}
+.pure-form-aligned .pure-control-group label {
+    text-align: left;
+}
+
+.pure-form-aligned .pure-control-group  .rsvp-input {
+    width: 15rem;
+}
+
+h1 {
+    color:maroon;
+}
